@@ -299,3 +299,28 @@ console.log(
   'font-size:18px; font-weight:bold; color:#0000FF;'
 );
 console.log('Built with ❤️ in Abuja, Nigeria.');
+
+
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      success.style.display = 'block';
+      form.reset();
+    } else {
+      alert("Something went wrong. Try again.");
+    }
+  });
