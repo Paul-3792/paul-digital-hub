@@ -299,6 +299,7 @@ console.log(
   'font-size:18px; font-weight:bold; color:#0000FF;'
 );
 console.log('Built with ❤️ in Abuja, Nigeria.');
+<<<<<<< HEAD
 
 
   const form = document.getElementById('contactForm');
@@ -324,3 +325,5 @@ console.log('Built with ❤️ in Abuja, Nigeria.');
       alert("Something went wrong. Try again.");
     }
   });
+=======
+>>>>>>> 9e7f484da656674f13259a0a76533764d09c5979
