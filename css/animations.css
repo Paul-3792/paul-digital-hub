@@ -1,0 +1,134 @@
+/* ============================================================
+   PAUL DIGITAL HUB — animations.css
+   All keyframe animations and scroll-triggered fade effects
+   ============================================================ */
+
+/* ============================================================
+   KEYFRAMES
+   These define the actual motion sequences
+   ============================================================ */
+
+/* Pulsing dot used in hero badge and status */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.45; transform: scale(1.35); }
+}
+
+/* Fade up — elements rise into view */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gentle float for the hero card */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* Slide in from left */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+
+/* ============================================================
+   SCROLL-TRIGGERED ANIMATIONS
+   
+   HOW IT WORKS:
+   1. Add class "animate-fadeup" to any element in HTML
+   2. By default it's invisible (opacity 0, moved down 30px)
+   3. JavaScript in main.js watches when it scrolls into view
+   4. When visible, it adds class "visible" → CSS animates it in
+   ============================================================ */
+
+.animate-fadeup {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+/* When JS adds "visible", element animates in */
+.animate-fadeup.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered delays — children appear one after another */
+.animate-delay-1 { transition-delay: 0.15s; }
+.animate-delay-2 { transition-delay: 0.30s; }
+.animate-delay-3 { transition-delay: 0.45s; }
+
+
+/* ============================================================
+   HERO SECTION LOAD ANIMATION
+   Runs once when the page loads — no scroll trigger needed
+   ============================================================ */
+.hero-text {
+  animation: fadeUp 0.8s ease forwards;
+}
+.hero-card {
+  animation: fadeUp 0.8s ease 0.25s both, float 6s ease-in-out 1s infinite;
+}
+
+
+/* ============================================================
+   NAV LINK UNDERLINE ANIMATION
+   (defined in style.css but extended here)
+   ============================================================ */
+.nav-link {
+  position: relative;
+}
+
+
+/* ============================================================
+   BUTTON PRESS EFFECT
+   A subtle scale-down when you click a button
+   ============================================================ */
+.btn:active {
+  transform: scale(0.97);
+}
+
+
+/* ============================================================
+   SERVICE CARD ICON BOUNCE ON HOVER
+   ============================================================ */
+.service-card:hover .service-icon {
+  animation: float 1.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+
+/* ============================================================
+   WHATSAPP BUTTON PULSE RING
+   A subtle ring that pulses outward from the button
+   ============================================================ */
+@keyframes waPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70%  { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+  animation: waPulse 2.5s infinite;
+}
+
+
+/* ============================================================
+   PAGE TRANSITION (optional smooth fade on load)
+   ============================================================ */
+body {
+  animation: pageLoad 0.4s ease;
+}
+
+@keyframes pageLoad {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

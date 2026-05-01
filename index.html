@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paul Digital Hub – Web Development, Programming Tutoring, and Phone Repairs in Abuja, Nigeria." />
+  <title>Paul Digital Hub | Web Dev · Tutoring · Phone Repairs</title>
+
+  <!-- Google Fonts: Clash Display for headings, Plus Jakarta Sans for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Our CSS files -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Paul<span>Digital</span>Hub</a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#home"     class="nav-link">Home</a>
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#blog"     class="nav-link">Blog</a>
+        <a href="#contact"  class="nav-link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home"     onclick="closeMobileMenu()">Home</a>
+    <a href="#about"    onclick="closeMobileMenu()">About</a>
+    <a href="#services" onclick="closeMobileMenu()">Services</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#blog"     onclick="closeMobileMenu()">Blog</a>
+    <a href="#contact"  onclick="closeMobileMenu()">Contact</a>
+    <a href="#contact"  onclick="closeMobileMenu()" class="btn btn-primary" style="margin-top:0.5rem;text-align:center;">Hire Me</a>
+  </div>
+
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero">
+    <!-- Decorative background blobs -->
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-text animate-fadeup">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Available for new projects · Abuja, NG
+        </div>
+
+        <h1 class="hero-title">
+          Building the <em>Digital Future</em><br>One Project at a Time
+        </h1>
+
+        <p class="hero-desc">
+          Hi, welcome to <strong>Paul Digital Hub</strong> — we design and create good looking websites, tutor students on programming, and Repair Phone I help people and businesses in Abuja thrive with technology.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact"  class="btn btn-primary">Hire Me</a>
+          <a href="#projects" class="btn btn-outline">View My Work</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>50+</strong>
+            <span>Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>30+</strong>
+            <span>Clients</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>3+</strong>
+            <span>Years Exp.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile card on the right -->
+      <div class="hero-card animate-fadeup animate-delay-2">
+        <div class="profile-avatar">PDH</div>
+        <p class="profile-name">Paul Digital Hub</p>
+        <p class="profile-role">Develop · Tutor · Repair</p>
+        <div class="profile-chips">
+          <span class="chip">HTML &amp; CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Python</span>
+          <span class="chip">Phone Repairs</span>
+        </div>
+        <div class="profile-status">
+          <span class="status-dot"></span> Open to work
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <div class="about-grid">
+
+        <!-- Skills card on the left -->
+        <div class="about-card animate-fadeup">
+          <div class="about-metrics">
+            <div class="metric">
+              <strong>50+</strong><span>Projects Done</span>
+            </div>
+            <div class="metric">
+              <strong>30+</strong><span>Happy Clients</span>
+            </div>
+            <div class="metric">
+              <strong>3+</strong><span>Years in Tech</span>
+            </div>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Web Development</span><span>90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Programming Tutoring</span><span>85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Phone Repairs</span><span>88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+            </div>
+            <!-- <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>UI / UX Design</span><span>75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Text on the right -->
+        <div class="about-text animate-fadeup animate-delay-1">
+          <h2 class="section-title">Passionate About Technology &amp; Helping People</h2>
+          <p>
+          <strong>Paul Digital Hub</strong>is a technology-driven brand based in Abuja, Nigeria, founded by Opara Paul. We specialize in modern web development, practical tech training, and reliable device repair services.
+          </p>
+          <p>
+            At Paul Digital Hub, we are passionate about helping beginners, students, and businesses harness the power of technology. 
+            Whether you’re looking to build a professional website, learn valuable digital skills, or fix your phone, we deliver clear guidance, dedicated service, and results you can trust.
+          </p>
+          <ul class="about-list">
+            <li>Modern, responsive website design &amp; development</li>
+            <li>Beginner-friendly one-on-one programming lessons</li>
+            <li>Fast, affordable phone repairs &amp; accessories</li>
+            <li>Honest, client-focused communication always</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" style="margin-top:2rem;display:inline-block;">Let's Work Together</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-label">What I Do</div>
+      <h2 class="section-title text-center">Services Built Around Your Needs</h2>
+      <p class="section-sub text-center">From websites to lessons to phone repairs — professional help, right here in Abuja.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card animate-fadeup">
+          <div class="service-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>Clean, fast, fully mobile-ready websites and web apps built to grow your brand and attract customers.</p>
+          <ul>
+            <li>Business &amp; portfolio websites</li>
+            <li>E-commerce stores</li>
+            <li>Landing pages</li>
+            <li>Website maintenance</li>
+          </ul>
+          <!-- <a href="#contact" class="service-cta">Get a Quote →</a> -->
+        </div>
+
+        <div class="service-card animate-fadeup animate-delay-1">
+          <div class="service-icon">📚</div>
+          <h3>Programming Tutoring</h3>
+          <p>Learn to code from scratch in a relaxed, one-on-one environment. All levels welcome — no experience needed.</p>
+          <ul>
+            <li>HTML, CSS &amp; JavaScript</li>
+            <li>Python for beginners</li>
+            <li>React &amp; web frameworks</li>
+            <li>Flexible scheduling</li>
+          </ul>
+          <!-- <a href="#contact" class="service-cta">Book a Lesson →</a> -->
+        </div>
+
+        <div class="service-card animate-fadeup animate-delay-2">
+          <div class="service-icon">📱</div>
+          <h3>Phone Repairs &amp; Accessories</h3>
+          <p>Fast, affordable screen replacements, battery swaps, software fixes, and genuine accessories — all in Abuja.</p>
+          <ul>
+            <li>Screen &amp; battery replacement</li>
+            <li>Software troubleshooting</li>
+            <li>Chargers, cases &amp; accessories</li>
+            <li>Same-day repairs available</li>
+          </ul>
+          <!-- <a href="#contact" class="service-cta">Book a Repair →</a> -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-label">My Work</div>
+      <h2 class="section-title text-center">Recent Projects</h2>
+      <p class="section-sub text-center">A selection of websites and apps I've built for clients and personal growth.</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card animate-fadeup">
+          <div class="project-thumb p1">🛒</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>E-Commerce Store</h3>
+            <p>A product listing site with cart and checkout flow — built for a small Abuja retailer.</p>
+          </div>
+        </div>
+
+        <div class="project-card animate-fadeup animate-delay-1">
+          <div class="project-thumb p2">📊</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">CSS Grid</span>
+              <span class="tag">Charts.js</span>
+            </div>
+            <h3>Business Dashboard</h3>
+            <p>Sales and inventory tracker for a local shop — clean, fast, and mobile-friendly.</p>
+          </div>
+        </div>
+
+        <div class="project-card animate-fadeup animate-delay-2">
+          <div class="project-thumb p3">🎓</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>Tutoring Platform</h3>
+            <p>A course listing site with lesson pages and a contact form for my programming students.</p>
+          </div>
+        </div>
+
+        <div class="project-card animate-fadeup animate-delay-3">
+          <div class="project-thumb p4">🏥</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Responsive</span>
+              <span class="tag">CSS Flexbox</span>
+            </div>
+            <h3>Clinic Website</h3>
+            <p>Professional multi-page site for a medical clinic — services, team, and booking form included.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== BLOG ===================== -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-label">The Blog</div>
+      <h2 class="section-title text-center">Tips, Tutorials &amp; Insights</h2>
+      <p class="section-sub text-center">Practical content for beginners and anyone curious about tech.</p>
+
+      <div class="blog-grid">
+
+        <article class="blog-card animate-fadeup">
+          <div class="blog-thumb bt1">
+            <span class="blog-date">May 2025</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-cat">Web Dev</span>
+            <h3>Build Your First Website in One Day</h3>
+            <p>A step-by-step beginner guide to creating a clean, professional website with just HTML and CSS.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <article class="blog-card animate-fadeup animate-delay-1">
+          <div class="blog-thumb bt2">
+            <span class="blog-date">Apr 2025</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-cat">Tips</span>
+            <h3>5 Signs Your Phone Needs a Repair Before It Breaks</h3>
+            <p>Spot early warning signs of phone failure — and how to fix them before they become expensive.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+        <article class="blog-card animate-fadeup animate-delay-2">
+          <div class="blog-thumb bt3">
+            <span class="blog-date">Mar 2025</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-cat">Career</span>
+            <h3>How I Started Freelancing in Tech from Abuja</h3>
+            <p>My personal journey from hobbyist to professional — the wins, setbacks, and lessons I learned.</p>
+            <a href="#" class="blog-link">Read More →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+
+      <div class="contact-grid">
+
+        <!-- Left: info -->
+        <div class="contact-info animate-fadeup">
+          <h2 class="section-title">Let's Build Something Great Together</h2>
+          <p>Have a project, want a lesson, or need a phone fixed? Send a message and I'll reply within 24 hours.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="c-icon">📍</div>
+              <div>
+                <small>Location</small>
+                <strong>Abuja, Nigeria</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">✉️</div>
+              <div>
+                <small>Email</small>
+                <strong>paul@pauldigitalhub.com</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon">📱</div>
+              <div>
+                <small>WhatsApp</small>
+                <!-- IMPORTANT: Replace 234XXXXXXXXXX with your real number below -->
+                <strong><a href="https://wa.me/2347072358083" target="_blank" rel="noopener">+234 XXX XXX XXXX</a></strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp CTA button -->
+          <a href="https://wa.me/2347072358083"
+             target="_blank" rel="noopener"
+             class="btn btn-whatsapp" style="margin-top:2rem;display:inline-flex;align-items:center;gap:10px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <!-- Right: form -->
+        <form class="contact-form animate-fadeup animate-delay-1" id="contactForm" novalidate action="https://formspree.io/f/mrejgkgw"
+  method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Your name here..." required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Paul" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service...</option>
+              <option>Web Development</option>
+              <option>Programming Tutoring</option>
+              <option>Phone Repair</option>
+              <option>Phone Accessories</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"
+              placeholder="Tell me about your project or what you need help with..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message →</button>
+
+          <!-- Success message (hidden by default) -->
+          <div class="form-success" id="formSuccess" style="display:none;">
+            ✅ Message sent! I'll get back to you within 24 hours.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo">Paul<span>Digital</span>Hub</a>
+        <p>Building clean digital solutions from Abuja, Nigeria. Web dev · Tutoring · Phone repairs.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Web Development</a>
+        <a href="#services">Programming Tutoring</a>
+        <a href="#services">Phone Repairs</a>
+        <a href="#services">Phone Accessories</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <!-- Replace # with your real links -->
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+        <!-- Replace 234XXXXXXXXXX with your number -->
+        <a href="https://wa.me/2347072358083" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Paul Digital Hub · Abuja, Nigeria · Made with ❤️</p>
+    </div>
+  </footer>
+
+
+  <!-- ===================== FLOATING WHATSAPP BUTTON ===================== -->
+  <!--
+    HOW TO USE:
+    Replace "234XXXXXXXXXX" with your real WhatsApp number.
+    Example: if your number is 08012345678, write: 2348012345678
+    (remove the leading 0, add 234 for Nigeria's country code)
+  -->
+  <a href="https://wa.me/2347072358083"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener"
+     aria-label="Chat with Paul on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-tooltip">Chat on WhatsApp</span>
+  </a>
+
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script src="js/main.js"></script>
+</body>
+</html>
