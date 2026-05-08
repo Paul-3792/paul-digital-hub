@@ -109,7 +109,7 @@ ul { list-style: none; }
 }
 
 .about-photo {
-  width: 100%;
+  width: 80%;
   border-radius: var(--radius-lg);
   object-fit: cover;
   border: 1px solid var(--border);
